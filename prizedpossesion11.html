@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>Employee Interests Survey</title>
+</head>
+<body>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>welcome to my random survey.</h1>
+first off, how are you feeling?
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+what color is your toothbrush?
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+explain why alvin and the chipmunks is a move ahead of its time.
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+hot take: water has a taste.
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>yes
+<input type="radio" name="exe" value=2>no
+</p>
+what's your favorite way to destress?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">reading
+<input type="checkbox" name="Web">podcasts
+<input type="checkbox" name="Phone">cooking
+<input type="checkbox" name="Magazines">watching a movie/tv show
+<input type="checkbox" name="Magazines">going for a drive
+</p>
+what is the best pizza topping?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">pepperoni
+<option value=2 >mushrooms
+<option value=3 >sausage
+<option value=4 >green peppers
+<option value=5 >black olives
+<option value=5 >toenail clippings
+<option value=5 >garlic
+<option value=5 >bacon
+</select>
+</br></br>
+go on google and search for a cute pup to make u smile. <3
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
+</form>
+</body>
+</html>

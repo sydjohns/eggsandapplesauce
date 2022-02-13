@@ -1,0 +1,11 @@
+@font-face {
+  font-family:"Sprat";
+  src: url("Sprat-Bold.otf") format("OpenType");
+}
+
+.bigtext {
+    font-family: "Sprat";
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
