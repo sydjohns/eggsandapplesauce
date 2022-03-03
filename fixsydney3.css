@@ -1,0 +1,141 @@
+img {
+  display: block;
+  left: auto;
+}
+
+body {
+  background-image: url('grainy clock background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.wrapper {
+  left: 100px;
+}
+
+.hand {
+  font-family: helveticaneue;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  width: 69%;
+  right: 69%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 70%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 15%;
+  z-index: 1.5;
+}
+
+.hand.min-hand {
+  height: 1.5px;
+  z-index: 5;
+  width: 20%;
+}
+
+.hand.second-hand {
+  background: red;
+  width: 20%;
+  height: 1px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+span {
+  color: black;
+  text-align: center;
+}
+
+.toggle {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+/* b {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.is-visible {
+  position: relative;
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+} */
+
+@keyframes push-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes push-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
